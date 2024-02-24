@@ -1,0 +1,10 @@
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+.offcanvas-backdrop.show {
+  opacity: 1;
+  background-color: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(8px);
+}
