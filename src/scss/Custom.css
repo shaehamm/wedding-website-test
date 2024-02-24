@@ -11971,3 +11971,20 @@ textarea.form-control-lg {
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
 }
+
+body { /* Safari, Chrome and Opera > 12.1 */ /* Firefox < 16 */ /* Internet Explorer */ /* Opera < 12.1 */
+  animation: fadein 0.75s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Firefox < 16 */
+/* Safari, Chrome and Opera > 12.1 */
+/* Internet Explorer */
+/* Opera < 12.1 */
