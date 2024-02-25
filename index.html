@@ -15,7 +15,7 @@
     ></script>
     <script rel="preload" src="/src/scripts/nav.js"></script>
     <link rel="stylesheet" href="/src/scss/Custom.css" />
-    <title>Wedding</title>
+    <title>Home</title>
   </head>
 
   <body>
@@ -26,59 +26,30 @@
           src="/src/scripts/nav.js"
           defer
         ></script>
-        <div class="row main-content">
-          <div class="col-lg-5 col-md">
-            <h3>Latest Sightings</h3>
-            <table>
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>Hero</th>
-                  <th>Location</th>
-                </tr>
-              </thead>
-              <tbody class="col">
-                <tr th:each="sight: ${sightings}">
-                  <td th:text="${'' + sight.date}"></td>
-                  <td th:text="${sight.hero.name}"></td>
-                  <td th:text="${sight.location.name}"></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="description" class="col-lg-7 col-md">
-            <h3>About</h3>
-            <p text-align="justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              euismod quam a elit rutrum tristique porttitor vel ante. Ut porta
-              erat quam. Cras elit nunc, maximus nec condimentum et, venenatis
-              et ante. Sed venenatis convallis turpis non egestas. In risus
-              urna, facilisis a lacus eu, pulvinar commodo erat. Phasellus
-              suscipit lorem sed tortor finibus, ut sollicitudin risus accumsan.
-              Proin tempor est quis pulvinar condimentum. Suspendisse interdum
-              tortor sit amet nunc posuere consequat. Aenean scelerisque non
-              nisl non accumsan. Nulla vulputate quis ex a rhoncus. Quisque
-              vestibulum dolor nec egestas pellentesque.
-            </p>
-            <p>
-              Donec vehicula semper vestibulum. Praesent aliquam a ante a
-              convallis. Duis pulvinar sagittis ullamcorper. Suspendisse quis
-              velit in nunc sagittis volutpat. Nunc et scelerisque libero.
-              Quisque sem urna, consectetur vitae laoreet eget, sodales quis
-              turpis. Sed eget ex sit amet nulla finibus fermentum sit amet eget
-              dolor. Morbi sed arcu sit amet enim tincidunt consectetur. Orci
-              varius natoque penatibus et magnis dis parturient montes, nascetur
-              ridiculus mus. Curabitur felis mi, convallis vel vestibulum sit
-              amet, molestie ut velit. Cras risus ligula, finibus sit amet
-              fringilla sed, sagittis in est. Praesent felis mi, imperdiet ut
-              odio vel, bibendum blandit arcu.
-            </p>
-          </div>
-        </div>
-        <footer>
-          <span>Shae Hamm - Based off of My Hero Academia</span>
-        </footer>
       </div>
+      <div class="row">
+        <figure>
+          <img
+            src="assets/img/sc-mountain-landscape.jpg"
+            alt="Connor & Shae standing in the snow with a mountain behind them."
+            class="img-fluid"
+          />
+        </figure>
+      </div>
+      <div class="row main-content text-center">
+        <div id="details" class="col-md">
+          <h3>Della Terra Mountain Chateau</h3>
+          <p>2:30pm Estes Park, CO</p>
+        </div>
+      </div>
+      <footer>
+        <div class="row text-center">
+          <h2>S&C</h2>
+        </div>
+        <div class="row text-center">
+          <h5>2.15.2025</h5>
+        </div>
+      </footer>
     </div>
     <script
       src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
