@@ -11968,8 +11968,12 @@ textarea.form-control-lg {
 .offcanvas-backdrop.show {
   opacity: 1;
   background-color: rgba(15, 23, 42, 0.5);
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+.offcanvas {
+  opacity: 0.55;
 }
 
 body { /* Safari, Chrome and Opera > 12.1 */ /* Firefox < 16 */ /* Internet Explorer */ /* Opera < 12.1 */
